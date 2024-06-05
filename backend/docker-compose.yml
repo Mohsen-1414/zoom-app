@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: Admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: postdb
+    ports:
+      - "5454:5432"
+
